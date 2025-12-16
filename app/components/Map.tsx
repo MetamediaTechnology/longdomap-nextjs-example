@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Geometry, LongdoMap, LongdoTag, Map, Marker, Popup } from 'longdomap-react';
+import {  LongdoMap, LongdoTag, Map, Marker, Popup } from 'longdomap-react';
 import MapCtrl from './MapCtrl';
 
 export default function LongdoMapCmp({
@@ -26,20 +26,6 @@ export default function LongdoMapCmp({
                         detail="This is a marker."
                         position={{ lon: 100.5018, lat: 13.7563 }}
                         title="Bangkok"
-                    />
-                    <Geometry
-                        type="circle"
-                        options={{
-                            title: "Circle Area",
-                            detail: "This is a circle area.",
-                        }}
-                        radius={0.01}
-                        points={[
-                            {
-                                lat: 13.747047,
-                                lon: 100.52547,
-                            },
-                        ]}
                     />
                     <Popup
                         position={{ lon: 100.555, lat: 13.666 }}

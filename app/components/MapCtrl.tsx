@@ -6,6 +6,8 @@ import { createCircle, createLongdoMarker, createObject, createPolygon, createPo
 interface MapCtrlProps {
     map?: Map;
 }
+
+
 export default function MapCtrl({ map }: MapCtrlProps) {
     const [location, setLocation] = useState<{ lat: number; lon: number } | null>(null);
     const [mouseLocation, setMouseLocation] = useState<{ lat: number; lon: number } | null>(null);
@@ -417,6 +419,20 @@ export default function MapCtrl({ map }: MapCtrlProps) {
                 Clear Layers
             </button>
 
+            <h2 className="text-lg font-semibold">Map Route</h2>
+            <button  onClick={() => {
+                const p1 = createLongdoMarker({ lat: 13.7563, lon: 100.5018 }, { popup: { title: "Start" } });
+                const p2 = createLongdoMarker({ lat: 13.6900, lon: 100.7507 }, { popup: { title: "End" } });
+                map?.Route.add(p1);
+                map?.Route.add(p2);
+               setTimeout(() => {
+                console.log('object');
+                console.log(map);
+                (map?.Route as { search: () => void } | undefined)?.search();
+               }, 1000);
+            }}>
+                Add Route
+            </button>
 
 
         </aside>
