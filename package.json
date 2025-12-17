@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "longdomap-react": "^1.0.8",
+    "longdomap-react": "^1.0.9",
     "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

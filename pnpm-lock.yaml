@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       longdomap-react:
-        specifier: ^1.0.8
-        version: 1.0.8(jiti@2.6.1)(postcss@8.5.6)(react@19.2.0)(typescript@5.9.3)
+        specifier: ^1.0.9
+        version: 1.0.9(jiti@2.6.1)(postcss@8.5.6)(react@19.2.0)(typescript@5.9.3)
       next:
         specifier: 15.3.8
         version: 15.3.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -1674,8 +1674,8 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
-  longdomap-react@1.0.8:
-    resolution: {integrity: sha512-/OPimIEtZ5BuxCUmAv8GGOcRBjSlL2YEv/MaBBfa/Mb+JOnAyK4mGHuR2b6LLIBj3BFL2MorrKUjHZFY1Mtu8Q==}
+  longdomap-react@1.0.9:
+    resolution: {integrity: sha512-q79lAfQKgw1n2EXnLgMr58meKJTw5o4n/xjfUbieEMOhtdEhoguw6Ae+IIaE/CK/ouercfwA0gbRPePYlyfyNw==}
     peerDependencies:
       react: '>=17.0.0'
 
@@ -3809,7 +3809,7 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
-  longdomap-react@1.0.8(jiti@2.6.1)(postcss@8.5.6)(react@19.2.0)(typescript@5.9.3):
+  longdomap-react@1.0.9(jiti@2.6.1)(postcss@8.5.6)(react@19.2.0)(typescript@5.9.3):
     dependencies:
       longdomap-type: 1.0.1(jiti@2.6.1)(postcss@8.5.6)(typescript@5.9.3)
       react: 19.2.0
